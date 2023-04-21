@@ -50,26 +50,29 @@ a{
 }
 .hero{
   display: flex;
+  flex-direction: row-reverse;
   Background-color: #f2ede0;
   height: 600px;
   
 }
 .heroleft{
  display: flex;
- justify-content: left;
+ justify-content: flex-start;
  flex-direction: column;
- margin: 100px;
+ padding-top: 150px;
+ 
+  
+ 
   
 }
 
 .heroimg{
-  max-width: 40%;
+  height: 300 px;
   text-align: right;
 }
 h1{
   display: flex;
   color: #026CD9;
-  font-family: sans-serif;
   font-size: 85px;
   justify-content: left;
 }
@@ -86,32 +89,22 @@ h3{
 .name{
   display: flex;
   Font-size: 85px;
-  justify-content: left;
+  justify-content: flex-start;
   
 }
-img{
-  max-width: 60%;
-}
+
 .gridcontainer{
- display: grid;
- grid-template-columns: auto auto;
- grid-template-rows: auto auto auto;
- column-gap: 0px;
- padding: 50px;
-  row-gap: 150px;
+ display: inline-grid;
+ grid-template-columns: 60% 40%;
+ grid-gap: 80px;
+ padding-bottom: 50px;
+ align-items: center;
+  align-content: center;
+ padding-right: 500px;
+ padding-left: 500px;
+ 
 }
-.grid-item1{
- grid-column-start: 1;
-  grid-column-end: 3;
-}
-.grid-item2{
-  grid-column-start: 1;
-  grid-column-end:3;
-}
-.grid-item3{
-  grid-column-start: 1;
-  grid-column-end: 3; 
-}
+
 .container{
  display:flex;
   flex-direction: column;
@@ -123,7 +116,7 @@ img{
 }
 p{
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   font-family: sans-serif;
   font-size: 25px;
 }
@@ -134,9 +127,8 @@ p{
   font-family: sans-serif;
   justify-content: center;
   align-content: center;
-height: 100px;
 }
-.footy{
+  .footy{
   display: flex;
   justify-content: center;
 }
@@ -144,9 +136,7 @@ height: 100px;
   display: flex;
   justify-content: center;
 }
-hr{
-  margin:0px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: transparent; 
+.space{
+  background-color: #f2ede0;
+  height: 50px;
 }
